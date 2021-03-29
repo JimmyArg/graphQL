@@ -1,0 +1,20 @@
+query naruto($name: String){
+   characters(filter:{name:$name}) {
+        results {
+              _id
+              name
+              nameMeaning
+              age
+              avatarSrc
+              description
+              rank
+              village
+              firstAnimeAppearance
+           notableFeatures
+              notableQuotes
+
+
+            }
+          }
+    }
+
