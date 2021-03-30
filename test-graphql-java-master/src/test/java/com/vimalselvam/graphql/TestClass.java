@@ -11,8 +11,6 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Header;
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
