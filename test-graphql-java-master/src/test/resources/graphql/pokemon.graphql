@@ -1,0 +1,28 @@
+{
+  customers (
+    environment: { box: "qcp", country: "ar" }
+    page: { pageNumber: 0, numberOfResults: 1 }
+    ibsCustomerInputs:   {
+      distinct:true
+      sustatusInput: { id: 6 }
+      customerClassInput: { id: 2 }
+      agreementDetailInputs: {
+        financialAccountInput:{accstatInput:{id:16}}
+        commercialProductInput:{commercialProductCategoryInput:{id:3}}
+        agreementDetailStatusInput: { id: 1 }
+        financialAccountInput: { balance: { operator: lessThanOrEqual, value: 0 } }
+      }
+    }
+  ) {
+    ibsCustomer {
+      id
+      agreementDetails {
+        financialAccount{
+          accstat{
+            description
+          }
+        }
+      }
+    }
+  }
+}

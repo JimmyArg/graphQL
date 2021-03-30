@@ -1,0 +1,19 @@
+query naruto{
+   characters(filter:{name:"kakashi"}) {
+        results {
+              _id
+              name
+              nameMeaning
+              age
+              avatarSrc
+              description
+              rank
+              village
+              firstAnimeAppearance
+           notableFeatures
+              notableQuotes
+
+
+            }
+          }
+    }
